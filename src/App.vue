@@ -1,14 +1,12 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="content-wrapper">
+    <router-view />
   </div>
-  <router-view />
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Helvetica, Arial, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -26,5 +24,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.content-wrapper {
+  padding: 20px;
+  background-color: #f8f8f8;
 }
 </style>
